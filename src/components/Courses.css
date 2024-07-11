@@ -14,7 +14,6 @@
     border: 0;
     gap: 20px;
     padding: 20px;
-    background-color: red;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     position: absolute;
     
@@ -41,9 +40,8 @@
 }
 
 .container-image {
-    /*width: 271px;
-    height: 208px;*/
-    width: 100%;
+    width: 271px;
+    height: 208px;
     height: auto;
 }
 
@@ -71,15 +69,14 @@
 }
 
 .content li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    gap: 2px;
 }
 
 
 
 .course-item {
     display: flex;
-    
-    background-color: aqua;
 }
 
 @media (min-width: 600px) {
@@ -102,6 +99,6 @@
 
 @media (min-width: 1200px) {
   .container-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 2fr);
   }
 }
