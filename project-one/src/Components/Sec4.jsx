@@ -5,7 +5,7 @@ const Sec4 = () => {
     <>
     <div className="sec4">
     <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3>
-
+{/* 
     <form>
             <label for="name">Full Name (Required)</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required />  
@@ -31,7 +31,7 @@ const Sec4 = () => {
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
-        </form>
+        </form> */}
 
     </div>
     </>
