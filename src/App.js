@@ -2,13 +2,17 @@ import React from "react";
 import "./App.css";
 
 import Courses from "./components/Courses";
-import AboutSection from "./components/AboutSection";
+import AboutUs from "./components/AboutUs";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Courses />
-      <AboutSection />
+      <AboutUs />
+      <MainContent />
+      <Footer/>
     </div>
   );
 }

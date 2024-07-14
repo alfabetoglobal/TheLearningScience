@@ -1,0 +1,21 @@
+footer {
+  padding: 20px;
+  background-color: #e0e0e0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  margin-right: 10px; 
+}
+
+.counter {
+  font-size: 18px;
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}

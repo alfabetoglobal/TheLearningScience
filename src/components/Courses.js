@@ -56,7 +56,6 @@ const Courses = () => {
 
               <div className="content">
                 <h3>{course.heading}</h3>
-
                 <ul>
                   {course.description.map((item, i) => (
                     <li key={i}>{item}</li>

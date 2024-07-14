@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+}
+
+.App > div {
+  padding: 20px;
+  flex: 1; /* Ensure each section takes up equal space */
+  box-sizing: border-box;
+}
