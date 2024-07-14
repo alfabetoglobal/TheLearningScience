@@ -1,0 +1,74 @@
+.App {
+  text-align: left;
+  background-color: #0f123d;
+  color: white;
+  padding: 20px;
+}
+
+.App-header h3 {
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.App-header h1 {
+  font-size: 2.5em;
+  margin-left: 200px;
+  /*margin: 0.5em 0;*/
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+ /* margin: 20px 0;*/
+} 
+
+.card {
+  background-color: #e6f0ef;
+  color: #223c4f;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px 200px 0 0;
+  margin-top: -150px;
+}
+
+footer p {
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.sign-up-button {
+  background-color: #4a7be4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sign-up-button:hover {
+  background-color: #3b6ac6;
+}
