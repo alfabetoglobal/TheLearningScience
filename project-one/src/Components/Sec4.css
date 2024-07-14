@@ -1,0 +1,11 @@
+.sec4{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(white, rgb(123, 123, 247), blue);
+}
+
+.sec4 h3{
+    padding-top: 5rem;
+    padding-left: 30rem;
+    color: black;
+}
