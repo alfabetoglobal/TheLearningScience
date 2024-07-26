@@ -1,0 +1,82 @@
+.contact-us {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-us-header {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 7rem;
+
+    }
+.contact-image {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+.contact-us-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    /* background-color: #f9f9f9; */
+    margin-left: 25rem;
+    margin-right: 20rem;
+}
+
+.contact-item {
+    max-width: 300px;
+}
+
+.contact-item h2 {
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 5px 0;
+}
+.contact-item i{
+margin-right: 10px;
+}
+
+.contact-item a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+.responsive-map{
+    overflow: hidden;
+    height: 0;
+    /* width: 10px; */
+    padding-bottom: 40%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.responsive-map iframe{
+    border: 0;
+    /* height: 100%; */
+    /* width: 100%; */
+    left:45rem;
+    top: 10rem;
+    bottom: 10rem;
+    position: absolute;
+    /* margin-bottom: 2rem; */
+    /* padding-right: 30rem; */
+}

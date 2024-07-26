@@ -1,0 +1,24 @@
+.footer1 {
+  padding: 20px;
+  margin-top: 0rem;
+  background-color: #e0e0e0;
+  width: 98%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.footer1 p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px; 
+}
+
+.count {
+  font-size: 18px;
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}

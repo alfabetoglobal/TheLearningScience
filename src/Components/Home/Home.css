@@ -1,0 +1,341 @@
+.main-content {
+    display: flex;
+    
+      background: linear-gradient(to right, #040a7c, #202475, #3b3597, #b7b5f1);
+  }
+  
+  .left,
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .content {
+    color: #fff;
+    margin-left: 200px;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .content .heading h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .content button {
+    background-color: #fff;
+    color: #060606;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .content button:hover {
+    background-color: #444;
+  }
+  
+  .form-container {
+    margin-top: 100px;
+    padding: 40px;
+    background-color: #808de1;
+    border: 1px solid #73799d;
+    border-radius: 10px;
+    margin-right: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-checkboxes,
+  .right-checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-group label {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .form-container button[type="submit"] {
+    background-color: #060f70;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #42498d;
+  }
+
+  /* ----------------------- */
+
+  .App {
+    text-align: left;
+    background-color: #0f123d;
+    color: white;
+    padding: 20px;
+  }
+  
+  .App-header h3 {
+    margin-top: 20px;
+    margin-left: 200px;
+  }
+  
+  .App-header h1 {
+    font-size: 2.5em;
+    margin-left: 200px;
+    /*margin: 0.5em 0;*/
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+   /* margin: 20px 0;*/
+  } 
+  
+  .card {
+    background-color: #e6f0ef;
+    color: #223c4f;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px 200px 0 0;
+    margin-top: -150px;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    text-align: right;
+  }
+  
+  .sign-up-button {
+    background-color: #4a7be4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .sign-up-button:hover {
+    background-color: #3b6ac6;
+  }
+
+
+  /* -------------Section-3-------------------- */
+  .offerings-container {
+    text-align: left;
+    padding: 50px;
+    background-image: url(https://static.wixstatic.com/media/a3c153_56669e38ce904a728a6246879d546efe~mv2.jpg/v1/fill/w_2483,h_1043,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3c153_56669e38ce904a728a6246879d546efe~mv2.jpg);
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  
+  .offerings-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 150px;
+  }
+  
+  .offering {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .circle {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .offering h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .offering p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .offering ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .offering ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .info-button {
+    background-color: #09058e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+   /* text-align: center;
+    text-decoration: none;
+    display: inline-block;*/
+    font-size: 1em;
+    margin-top: 10px;
+    cursor: pointer;
+    
+  }
+  
+  .info-button:hover {
+    background-color: #003399;
+  }
+
+   /* /* Extra Small Devices 
+   @media only screen and (max-width: 600px) {
+    body{    font-size: 36px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+}
+/* for tablets , large phones 
+
+@media only screen and (min-width: 766px){
+     body{ font-size: 36px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+
+  /* landscape tablets 
+  @media only screen and (min-width: 768px) {
+    .body {
+        font-size: 36px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+  }
+/* large desktop 
+  @media only screen and (min-width: 992px) {
+    .body {
+        font-size: 36px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+  }
+
+  /* extra large 
+  @media only screen and (min-width: 1200px) {
+    body {
+        font-size: 36px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+  }  */
+

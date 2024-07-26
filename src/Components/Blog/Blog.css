@@ -1,0 +1,205 @@
+#all-containerr{
+    margin-top: 3rem;
+    margin-left: 20rem;
+    padding: 0rem;
+    }
+    .nav2{
+    display: flex;
+    }
+    .container {
+      margin-top: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 344px;
+        gap: 1px;
+        margin: 1rem;
+        margin-right: 66rem;
+        /* background-color: #f2f2f2; */
+        /* --wix-blog-inline-padding: 36px; */
+      }
+      .allpost a{
+        text-decoration: none;
+        color:black;
+      }
+      .govt-job a{
+        text-decoration: none;
+      }
+      .campus-placement a{
+        text-decoration: none;
+      }
+      .biography a{
+        text-decoration: none;
+      }
+      
+    .interesting-fact a{
+      text-decoration: none;
+    }
+      .left-div {
+        width: 50%;
+        padding: 10px;
+        /* padding-left: 30rem;  */
+        margin-left: 8rem;
+      }
+      
+       .right-div {
+      border: 0.1px solid black; /* width, style, and color of the border */
+                padding: 20px; /* space inside the border */
+                width: 450px; /* width of the box */
+                height: 297.10px; /* height of the box */
+                /* margin-left: 20rem; */
+                /* padding-left: 5rem; */
+                position: absolute; /* positioning the element absolutely */
+                right: 26.9rem;
+      }
+      .right-div a{
+        text-decoration: none;
+        color: black;
+      }
+       
+      .author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-right: 3rem;
+      }
+      
+      .profile-icon {
+        font-size: 24px;
+        margin-right: 20rem;
+      }
+       
+      
+     
+      
+      .head h1 {
+        white-space: nowrap;
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-left: 15rem;
+      }
+    
+      .line{
+        border: none; /* Remove default border*/
+        height: 5px; /* Set the height of the line */
+        background-color: black; /* Set the color of the line */
+        margin: 20px 0; 
+      }
+      
+      .stats {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 150px;
+        padding-left: 10px;
+      }
+    
+      .nav2{
+        display: flex;
+        margin-left: 5rem;
+    
+    }
+    .nav2 li{ 
+      display: inline-block;
+      /* justify-content: space-between; */
+      align-items: center;
+      /* margin-right: 10px;  */
+      padding-left: 5rem;
+    } 
+    
+    @media (min-width: 768px) {
+      #all-containerr {
+        margin-left: 5rem;
+      }
+    
+      .nav {
+        margin-left: 5rem;
+      }
+    
+      .nav li {
+        padding-left: 2rem;
+      }
+    
+      .container {
+        margin-top: 10rem;
+        justify-content: space-evenly;
+        height: 344px;
+        gap: 1px;
+        margin: 1rem;
+        margin-right: 0;
+      }
+    
+      .left-div {
+        width: 50%;
+        margin-left: 2rem;
+      }
+    
+      .right-div {
+        position: relative;
+        right: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    
+      .author {
+        margin-bottom: 30px;
+        margin-right: 1rem;
+      }
+    
+      .profile-icon {
+        margin-right: 1rem;
+      }
+    
+      .stats {
+        margin-top: 50px;
+        justify-content: space-evenly;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      #all-containerr {
+        margin-left: 20rem;
+      }
+    
+      .nav {
+        margin-left: 5rem;
+      }
+    
+      .nav li {
+        padding-left: 5rem;
+      }
+    
+      .container {
+        margin-top: 10rem;
+        justify-content: space-evenly;
+        height: 344px;
+        gap: 1px;
+        margin: 1rem;
+        margin-right: 66rem;
+      }
+    
+      .left-div {
+        width: 50%;
+        margin-left: 8rem;
+      }
+    
+      .right-div {
+        position: absolute;
+        right: 26.9rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    
+      .author {
+        margin-bottom: 30px;
+        margin-right: 3rem;
+      }
+    
+      .profile-icon {
+        margin-right: 20rem;
+      }
+    
+      .stats {
+        margin-top: 150px;
+      }
+    } 
