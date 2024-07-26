@@ -1,4 +1,4 @@
-footer {
+.footer1 {
   padding: 20px;
   background-color: #e0e0e0;
   display: flex; 
@@ -6,9 +6,10 @@ footer {
   align-items: center; 
 }
 
-footer p {
+.footer1 p {
   margin: 0;
   font-size: 14px;
+  font-weight: 500;
   margin-right: 10px; 
 }
 

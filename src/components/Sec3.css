@@ -1,0 +1,169 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.offerings-container {
+  text-align: left;
+  padding: 50px;
+  background-image: url(https://static.wixstatic.com/media/a3c153_56669e38ce904a728a6246879d546efe~mv2.jpg/v1/fill/w_2483,h_1043,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3c153_56669e38ce904a728a6246879d546efe~mv2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Sec3-h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.offerings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+.offering {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.offering h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.offering p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.offering ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offering ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.info-button {
+  background-color: #09058e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.info-button:hover {
+  background-color: #003399;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .Sec3-h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .offerings-container {
+    padding: 20px;
+  }
+
+  .offerings-grid {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .offering {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .circle {
+    top: -20px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+  }
+
+  .offering h2 {
+    font-size: 1.2em;
+  }
+
+  .offering p, .offering ul li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .Sec3-h1 {
+    font-size: 2em;
+  }
+
+  .offering {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .circle {
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    font-size: 0.9em;
+  }
+
+  .offering h2 {
+    font-size: 1em;
+  }
+
+  .offering p, .offering ul li {
+    font-size: 0.8em;
+  }
+
+  .info-button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+}

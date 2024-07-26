@@ -3,7 +3,7 @@ import "./MainContent.css";
 
 function MainContent() {
   return (
-    <div className="content">
+    <div className="Main-content">
       <div className="background-images">
         <img
           src="https://static.wixstatic.com/media/e2871454f2c049049d857dbcb8df2b21.jpg/v1/fill/w_1424,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e2871454f2c049049d857dbcb8df2b21.jpg"

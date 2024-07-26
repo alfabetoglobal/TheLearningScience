@@ -3,13 +3,13 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="container-about">
       <div className="left">
-        <div className="header">
+        <div className="AboutUs-header">
           <h1>About TheLearningScience</h1>
           <p>An investment in knowledge pays the best interest."</p>
         </div>
-        <div className="content">
+        <div className="AboutUs-content">
           <p>
             At TheLearningScience, we offer a structured, yet flexible program
             that is tailored to your individual preferences and needs. Our team

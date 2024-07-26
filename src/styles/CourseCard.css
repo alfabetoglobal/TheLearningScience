@@ -1,0 +1,48 @@
+.course-card {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 100%; /* Extend width to take up available space */
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-image {
+  width: 40%; /* Keep image width to 40% to maintain aspect ratio */
+  height: auto;
+  background-color: black;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 20px;
+  width: 60%; /* Adjust info width to match the new image width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course-info h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.course-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-info ul li {
+  margin: 8px 0;
+  font-size: 1em;
+}
