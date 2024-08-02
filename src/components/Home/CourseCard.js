@@ -1,3 +1,5 @@
+//    components/CourseCard.js
+
 import React from "react";
 import "./Sec4.css";
 

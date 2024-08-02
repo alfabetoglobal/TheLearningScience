@@ -59,6 +59,28 @@ const Blog = () => {
                     <button className="nav-button">Interesting Facts</button>
                   </Link>
                 </li>
+                <li className="more" onClick={toggleMoreOptions}>
+                  <button className="nav-button">More</button>
+                  {moreOptionsVisible && (
+                    <ul className="dropdown">
+                      <li>
+                        <Link to="/option1">R Programming Language</Link>
+                      </li>
+                      <li>
+                        <Link to="/option2">Lifestyle</Link>
+                      </li>
+                      <li>
+                        <Link to="/option3">Competitive Exams</Link>
+                      </li>
+                      <li>
+                        <Link to="/option4">Misc</Link>
+                      </li>
+                      <li>
+                        <Link to="/option5">World History | UPSC</Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
                 {isMobile && (
                   <li className="more" onClick={toggleMoreOptions}>
                     <button className="nav-button">More</button>
