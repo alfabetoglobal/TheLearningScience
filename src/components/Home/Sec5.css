@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+.containeer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to right, #ff7f50, #f07f7b, #77a3ea, #4b89e6);
+    margin: 0;
+    padding: 0;
+}
+
+.lefft,
+.righht {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.headeer {
+    text-align: center;
+}
+
+.headeer h1 {
+    background-color: #ffcb42;
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.headeer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #052071;
+}
+
+.contennt {
+    text-align: center;
+}
+
+.contennt h2 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+.contennt p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.righht h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.belieffs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.belieef {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.belieef:nth-child(1) {
+    background-color: #817e80;
+}
+
+.belieef:nth-child(2) {
+    background-color: #ff7f50;
+}
+
+.belieef:nth-child(3) {
+    background-color: #bccff2;
+}
+
+.belieef:nth-child(4) {
+    background-color: #f4b8a0;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .containeer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .containeer {
+        grid-template-columns: 1fr;
+    }
+
+    .headeer h1 {
+        font-size: 2rem;
+    }
+
+    .contennt h2 {
+        font-size: 2rem;
+    }
+
+    .belieffs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .belieef p {
+        height: 175px;
+        padding: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .containeer {
+        grid-template-columns: 1fr;
+    }
+
+    .headeer h1 {
+        font-size: 1.5rem;
+    }
+
+    .contennt h2 {
+        font-size: 1.5rem;
+    }
+
+    .belieffs {
+        grid-template-columns: 1fr;
+    }
+
+    .contennt p {
+        font-size: 0.9rem;
+    }
+
+    .belieef {
+        font-size: 0.9rem;
+    }
+}

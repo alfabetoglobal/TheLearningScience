@@ -1,0 +1,277 @@
+.programs-container {
+    padding: 150px;
+}
+  
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.tabs {
+    position: relative;
+    overflow-x: auto; 
+    white-space: nowrap;
+    gap: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    scroll-behavior: smooth; 
+    border-bottom: 2px solid #000;
+}
+  
+.arrowL {
+    position: absolute;
+    color: #555;
+    left: 135px;
+    margin-top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.arrowR {
+    position: absolute;
+    color: #555;
+    right: 135px; 
+    margin-top: -45px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.tab {
+    box-sizing: border-box;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 14px 3%;
+    vertical-align: bottom;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+  
+.tab.active {
+    border-bottom: 3px solid #000;
+    color: #000;
+}
+  
+.program-details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    overflow: hidden;
+}
+  
+.program-image {
+    width: 100%;
+    height: auto;
+}
+  
+.program-info {
+    padding: 20px;
+    background: #fff;
+}
+  
+.program-info h2 {
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+  
+.date {
+    font-size: 18px;
+}
+  
+.date .line21 {
+    width: 130px;
+    height: 1px;
+    background-color: #979696;
+}
+  
+.program-info p {
+    margin: 5px 0;
+}
+  
+.join-button {
+    background-color: #05008c;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+.join-button:hover {
+    background-color: #4656c2;
+}
+  
+.no-programs {
+    display: flex;
+    margin-top: 140px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 30px;
+    color: #555;
+}
+  
+.no-programs p {
+    width: 50%;
+    margin-left: 250px;
+    margin-bottom: 150px;
+}
+  
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .arrowL, .arrowR {
+        left: 5px;
+        right: 5px;
+    }
+  
+    .tabs {
+        gap: 10px;
+    }
+  
+    .tab {
+        padding: 12px 2%;
+        font-size: 16px;
+    }
+  
+    .program-info h2 {
+        font-size: 22px;
+    }
+  
+    .date {
+        font-size: 16px;
+    }
+  
+    .join-button {
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .programs-container {
+        padding: 30px 15px;
+    }
+  
+    h1 {
+        font-size: 20px;
+    }
+  
+    .arrowL, .arrowR {
+        font-size: 18px;
+        left: 10px;
+        right: 10px;
+    }
+  
+    .tabs {
+        gap: 5px;
+    }
+  
+    .tab {
+        padding: 10px;
+        font-size: 14px;
+    }
+  
+    .program-info h2 {
+        font-size: 18px;
+    }
+  
+    .date {
+        font-size: 14px;
+    }
+  
+    .join-button {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+}
+  
+@media (max-width: 540px) {
+    .programs-container {
+        padding: 20px 10px;
+    }
+  
+    h1 {
+        margin-top: 100px;
+        font-size: 18px;
+    }
+  
+    .arrowL, .arrowR {
+        font-size: 16px;
+        left: 5px; 
+        right: 5px; 
+    }
+  
+    .tabs {
+        gap: 2px;
+    }
+  
+    .tab {
+        padding: 8px;
+        font-size: 12px;
+    }
+  
+    .program-info h2 {
+        font-size: 16px;
+    }
+  
+    .date {
+        font-size: 12px;
+    }
+  
+    .join-button {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+  
+    .footer1 {
+        margin-bottom: 1px;
+    }
+}
+  
+/* Specific for iPhone SE */
+@media (max-width: 375px) {
+    .programs-container {
+        margin-top: 150px;
+        padding: 10px 5px;
+    }
+  
+    h1 {
+        font-size: 16px;
+    }
+  
+    .arrowL, .arrowR {
+        font-size: 14px;
+        left: 5px; 
+        right: 5px; 
+    }
+  
+    .tabs {
+        gap: 1px;
+    }
+  
+    .tab {
+        padding: 6px;
+        font-size: 10px;
+    }
+  
+    .program-info h2 {
+        font-size: 14px;
+    }
+  
+    .date {
+        font-size: 10px;
+    }
+  
+    .join-button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,185 @@
+.blog-container {
+  font-family: Arial, sans-serif;
+}
+
+.blog-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.blog-header nav {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.blog-header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-header ul li {
+  margin: 0 10px;
+}
+
+.nav-button {
+  border: none;
+  background-color: white;
+  color: #716f6f;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: #000588; /* Change the hover color as needed */
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  color: #716f6f;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.dropdown li {
+  padding: 8px 0;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #716f6f;
+  font-size: 18px;
+}
+
+.dropdown li a:hover {
+  text-decoration: none;
+}
+
+.blog-header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  position: relative; /* Add this for the dropdown positioning */
+}
+
+.blog-header nav ul li {
+  margin-right: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative; /* Add this for the dropdown positioning */
+}
+
+.blog-header nav ul li.more {
+  cursor: pointer;
+}
+
+.blog-header nav ul li.more .dropdown {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+}
+
+.blog-header nav ul li.more .dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.blog-header nav ul li.more .dropdown li:hover {
+  background-color: #f5f5f5;
+}
+
+.blog-header nav ul li:last-child {
+  margin-left: auto;
+}
+
+.blog-main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.blog-post {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.blog-post img {
+  width: 500px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.blog-post-content {
+  flex: 1;
+}
+
+.blog-post-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.blog-post-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensure footer occupies full width */
+  position: relative; /* Ensure footer is relative to parent container */
+  bottom: 0; /* Position footer at the bottom */
+}
+
+/* Responsive styles */
+@media (max-width: 720px) {
+  .blog-header ul {
+    flex-wrap: wrap;
+  }
+
+  .blog-post {
+    flex-direction: column;
+  }
+
+  .blog-post img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
