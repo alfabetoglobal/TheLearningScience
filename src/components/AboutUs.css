@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(to right, #ff7f50, #f07f7b, #77a3ea, #4b89e6);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  background-color: #ffcb42;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-style: bold;
+  color: #052071;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.right h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+}
+
+.beliefs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.belief {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.belief:nth-child(1) {
+  background-color: #817e80;
+}
+
+.belief:nth-child(2) {
+  background-color: #ff7f50;
+}
+
+.belief:nth-child(3) {
+  background-color: #bccff2;
+}
+
+.belief:nth-child(4) {
+  background-color: #f4b8a0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack columns on small screens */
+  }
+
+  .header h1 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .content h2 {
+    font-size: 2rem; /* Adjust subheading size */
+  }
+
+  .beliefs {
+    grid-template-columns: 1fr; /* Stack beliefs */
+  }
+
+  .belief {
+    margin-bottom: 10px; /* Add spacing between beliefs */
+  }
+}
+
+@media (max-width: 480px) {
+  .header p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .content p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .content h2 {
+    font-size: 1.8rem; /* Adjust subheading size */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+}
+

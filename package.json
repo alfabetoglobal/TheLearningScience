@@ -1,17 +1,28 @@
 {
+<<<<<<< HEAD
   "name": "tls_web",
+=======
+  "name": "project-06",
+>>>>>>> 2b4fa4130b34c78ce29c43c292c05c310a97a74d
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-modal": "^3.16.1",
     "react-player": "^2.16.0",
     "react-router-dom": "^6.25.1",
+=======
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+>>>>>>> 2b4fa4130b34c78ce29c43c292c05c310a97a74d
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
