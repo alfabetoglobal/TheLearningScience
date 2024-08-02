@@ -15,7 +15,7 @@ const ContactUs = () => {
           {/* <img src="https://static.wixstatic.com/media/11062b_b1015cefa07e4c0b82f6601db2d1028ff000.jpg/v1/fill/w_980,h_352,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/11062b_b1015cefa07e4c0b82f6601db2d1028ff000.jpg" alt="Contact Us" className="contact-image" /> */}
           <ReactPlayer
             className="video"
-            display={false}
+            
             playing={true}
             controls={false}
             loop={true}
@@ -53,7 +53,7 @@ const ContactUs = () => {
               <i className="fa-brands fa-twitter"></i>
             </p> */}
             <br />
-            <br />
+          
             <div className="social">
               <a href="https://www.facebook.com/TheLearningScienceOfficials/">
                 <i className="facebook">

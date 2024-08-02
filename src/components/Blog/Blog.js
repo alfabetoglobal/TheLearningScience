@@ -1,5 +1,3 @@
-//  src/components/Blog/Blog.js
-
 import React, { useState, useEffect } from "react";
 import "./Blog.css";
 import Header from "../Header/Header";
@@ -10,6 +8,24 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const [moreOptionsVisible, setMoreOptionsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 720);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchVisible, setSearchVisible] = useState(false);
+
+  const blogPosts = [
+    {
+      img: "https://static.wixstatic.com/media/594faf_cccf96c90ede44b9a830ac656e680fce~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/594faf_cccf96c90ede44b9a830ac656e680fce~mv2.jpg",
+      title: "The Future of GPT: An Analysis",
+      meta: "Admin, Jul 1",
+      stats: "14 views, 0 comments",
+    },
+    {
+      img: "https://static.wixstatic.com/media/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg",
+      title: "SSC Combined Graduate Level (CGL) Examination 2024: Apply",
+      meta: "Admin, Jun 24",
+      stats: "20 views, 3 comments",
+    },
+    // Add more blog posts here...
+  ];
 
   const toggleMoreOptions = () => {
     setMoreOptionsVisible(!moreOptionsVisible);
@@ -18,6 +34,18 @@ const Blog = () => {
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 720);
   };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const toggleSearch = () => {
+    setSearchVisible(!searchVisible);
+  };
+
+  const filteredPosts = blogPosts.filter((post) =>
+    post.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -59,29 +87,8 @@ const Blog = () => {
                     <button className="nav-button">Interesting Facts</button>
                   </Link>
                 </li>
-                <li className="more" onClick={toggleMoreOptions}>
-                  <button className="nav-button">More</button>
-                  {moreOptionsVisible && (
-                    <ul className="dropdown">
-                      <li>
-                        <Link to="/option1">R Programming Language</Link>
-                      </li>
-                      <li>
-                        <Link to="/option2">Lifestyle</Link>
-                      </li>
-                      <li>
-                        <Link to="/option3">Competitive Exams</Link>
-                      </li>
-                      <li>
-                        <Link to="/option4">Misc</Link>
-                      </li>
-                      <li>
-                        <Link to="/option5">World History | UPSC</Link>
-                      </li>
-                    </ul>
-                  )}
-                </li>
-                {isMobile && (
+                {/* Conditionally render the More button based on isMobile state */}
+                {(isMobile || moreOptionsVisible) && (
                   <li className="more" onClick={toggleMoreOptions}>
                     <button className="nav-button">More</button>
                     {moreOptionsVisible && (
@@ -105,45 +112,45 @@ const Blog = () => {
                     )}
                   </li>
                 )}
-                <li>
+                <li onClick={toggleSearch} className="search9">
                   <FaSearch />
                 </li>
+                {searchVisible && (
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    placeholder="Search..."
+                    className="search-input"
+                  />
+                )}
               </ul>
             </nav>
           </header>
           <main className="blog-main">
-            <article className="blog-post">
-              <img
-                src="https://static.wixstatic.com/media/594faf_cccf96c90ede44b9a830ac656e680fce~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/594faf_cccf96c90ede44b9a830ac656e680fce~mv2.jpg"
-                alt="Future of GPT"
-              />
-              <div className="blog-post-content">
-                <div className="blog-post-meta">
-                  <span>Admin</span>
-                  <span>Jul 1</span>
-                </div>
-                <h2>The Future of GPT: An Analysis</h2>
-                <div className="blog-post-stats">
-                  <span>14 views</span>
-                  <span>0 comments</span>
-                </div>
+            {filteredPosts.length > 0 ? (
+              filteredPosts.map((post, index) => (
+                <article className="blog-post" key={index}>
+                  <img src={post.img} alt={post.title} />
+                  <div className="blog-post-content">
+                    <div className="blog-post-meta">
+                      <span>{post.meta}</span>
+                    </div>
+                    <h2>{post.title}</h2>
+                    <div className="blog-post-stats">
+                      <span>{post.stats}</span>
+                    </div>
+                  </div>
+                </article>
+              ))
+            ) : (
+              <div className="Blog-last">
+                <h4 className="next-line">
+                  Looks like we couldn’t find what you’re looking for. Try
+                  another search.
+                </h4>
               </div>
-            </article>
-            <article className="blog-post">
-              <img
-                src="https://static.wixstatic.com/media/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg"
-                alt="SSC CHSL Recruitment 2024"
-              />
-              <div className="blog-post-content">
-                <div className="blog-post-meta">
-                  <span>Admin</span>
-                  <span>Jun 24</span>
-                </div>
-                <h2>
-                  SSC Combined Graduate Level (CGL) Examination 2024: Apply
-                </h2>
-              </div>
-            </article>
+            )}
           </main>
         </div>
       </div>

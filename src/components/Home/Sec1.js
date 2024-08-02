@@ -41,7 +41,7 @@ const Sec1 = () => {
       <div className="main-content">
         <div className="left">
           <div className="content">
-            <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3>
+            <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3><br/>
             <div className="heading">
               <h1>
                 Unlock Your <br />

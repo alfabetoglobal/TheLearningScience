@@ -2,6 +2,7 @@
 
 .programs-container {
     padding: 150px;
+    
 }
   
 h1 {
@@ -162,8 +163,15 @@ h1 {
         padding: 30px 15px;
     }
   
-    h1 {
+    .h1-head {
         font-size: 20px;
+        padding: 20px;
+        margin-left: 100px;
+    }
+
+    .arrowR {
+        margin-left: 513px;
+        margin-top: -49px;
     }
   
     .arrowL, .arrowR {
@@ -199,10 +207,15 @@ h1 {
     .programs-container {
         padding: 20px 10px;
     }
+
+    .program-details{
+        margin-bottom: 110px;
+    }
   
-    h1 {
+    .h1-head {
         margin-top: 100px;
-        font-size: 18px;
+        font-size: 20px;
+        margin-left: 2px;
     }
   
     .arrowL, .arrowR {
@@ -210,6 +223,18 @@ h1 {
         left: 5px; 
         right: 5px; 
     }
+   
+    .arrowR{
+    
+        margin-left: 360px;
+        margin-top: -49px;
+    
+    }
+
+    .no-programs p {
+        margin-left: 2px;
+    }
+
   
     .tabs {
         gap: 2px;
@@ -245,7 +270,7 @@ h1 {
         padding: 10px 5px;
     }
   
-    h1 {
+    .h1-head {
         font-size: 16px;
     }
   
@@ -253,6 +278,13 @@ h1 {
         font-size: 14px;
         left: 5px; 
         right: 5px; 
+    }
+
+    .arrowR{
+    
+       margin-left: 360px;
+        margin-top: -49px;
+    
     }
   
     .tabs {

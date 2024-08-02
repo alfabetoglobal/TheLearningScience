@@ -1,3 +1,7 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .course-card {
   display: flex;
   flex-direction: row;
@@ -10,7 +14,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   width: 100%; /* Extend width to take up available space */
-  height: 220px;
+  height: 250px;
 }
 
 .course-card:hover {
@@ -45,7 +49,7 @@
 }
 
 .course-info ul li {
-  margin: 8px 0;
+  margin: 4px 0;
   font-size: 1em;
 }
 

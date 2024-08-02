@@ -1,3 +1,4 @@
+/* General Styles */
 .blog-container {
   font-family: Arial, sans-serif;
 }
@@ -12,7 +13,7 @@
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap */
   margin-top: 100px;
 }
 
@@ -22,6 +23,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between; /* Distributes space between items */
 }
 
 .blog-header ul li {
@@ -42,6 +44,17 @@
 
 .nav-button:hover {
   color: #000588; /* Change the hover color as needed */
+}
+
+.Blog-last .next-line {
+  border-color: #333;
+  display: flex;
+  padding: 165px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  font-size: 28px;
+  margin-top: 10px; /* Adjust the value as needed */
 }
 
 .dropdown {
@@ -168,10 +181,11 @@
   bottom: 0; /* Position footer at the bottom */
 }
 
-/* Responsive styles */
+/* Responsive styles for mobile devices */
 @media (max-width: 720px) {
   .blog-header ul {
     flex-wrap: wrap;
+    justify-content: center; /* Center items */
   }
 
   .blog-post {
@@ -181,5 +195,51 @@
   .blog-post img {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .Blog-last {
+    padding: 15px;
+  }
+
+  .Blog-last .next-line {
+    font-size: 24px;
+    padding: 15px; /* Adjust as needed */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .Blog-last {
+    padding: 10px;
+  }
+
+  .Blog-last .next-line {
+    font-size: 20px;
+    padding: 55px; /* Adjust as needed */
+  }
+
+  .search-input {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+/* Surface Duo View */
+@media (min-width: 720px) and (min-width: 540px) {
+  .blog-header nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog-post {
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+  }
+
+  .blog-post img {
+    width: 50%; /* Adjust width for Surface Duo’s large screens */
   }
 }

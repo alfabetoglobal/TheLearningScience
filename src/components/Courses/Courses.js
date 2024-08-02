@@ -41,7 +41,7 @@ const Courses = () => {
     <>
       <Header />
       <div className="programs-container">
-        <h1>Programs</h1>
+        <h1 className="h1-head" >Programs</h1>
         <div className="arrowL" onClick={handleScrollLeft}>
           &#x3c;
         </div>
