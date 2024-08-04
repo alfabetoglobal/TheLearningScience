@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Blog.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [moreOptionsVisible, setMoreOptionsVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 720);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchVisible, setSearchVisible] = useState(false);
 
@@ -24,15 +23,24 @@ const Blog = () => {
       meta: "Admin, Jun 24",
       stats: "20 views, 3 comments",
     },
+    {
+      img: "https://static.wixstatic.com/media/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/594faf_3573b1bb99064d5a93651c0cc58f76a2~mv2.jpg",
+      title:
+        "Essential Details and Guidelines for SSC CHSL 10+2 Recruitment 2024",
+      meta: "Admin, Apr 10",
+      stats: "38 views, 0 comments",
+    },
+    {
+      img: "https://static.wixstatic.com/media/11062b_9aeb82c30e9742bcadc79b3dc8eb9fdb~mv2.jpeg/v1/fill/w_454,h_341,fp_0.50_0.50,q_90,enc_auto/11062b_9aeb82c30e9742bcadc79b3dc8eb9fdb~mv2.jpeg",
+      title: "Unveiling Tomorrow: Navigating Data Mines for Future Insights",
+      meta: "Admin, Feb 16",
+      stats: "11 views, 0 comments",
+    },
     // Add more blog posts here...
   ];
 
   const toggleMoreOptions = () => {
     setMoreOptionsVisible(!moreOptionsVisible);
-  };
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth <= 720);
   };
 
   const handleSearchChange = (e) => {
@@ -46,13 +54,6 @@ const Blog = () => {
   const filteredPosts = blogPosts.filter((post) =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -87,31 +88,28 @@ const Blog = () => {
                     <button className="nav-button">Interesting Facts</button>
                   </Link>
                 </li>
-                {/* Conditionally render the More button based on isMobile state */}
-                {(isMobile || moreOptionsVisible) && (
-                  <li className="more" onClick={toggleMoreOptions}>
-                    <button className="nav-button">More</button>
-                    {moreOptionsVisible && (
-                      <ul className="dropdown">
-                        <li>
-                          <Link to="/option1">R Programming Language</Link>
-                        </li>
-                        <li>
-                          <Link to="/option2">Lifestyle</Link>
-                        </li>
-                        <li>
-                          <Link to="/option3">Competitive Exams</Link>
-                        </li>
-                        <li>
-                          <Link to="/option4">Misc</Link>
-                        </li>
-                        <li>
-                          <Link to="/option5">World History | UPSC</Link>
-                        </li>
-                      </ul>
-                    )}
-                  </li>
-                )}
+                <li className="more" onClick={toggleMoreOptions}>
+                  <button className="nav-button">More</button>
+                  {moreOptionsVisible && (
+                    <ul className="dropdown">
+                      <li>
+                        <Link to="/option1">R Programming Language</Link>
+                      </li>
+                      <li>
+                        <Link to="/option2">Lifestyle</Link>
+                      </li>
+                      <li>
+                        <Link to="/option3">Competitive Exams</Link>
+                      </li>
+                      <li>
+                        <Link to="/option4">Misc</Link>
+                      </li>
+                      <li>
+                        <Link to="/option5">World History | UPSC</Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
                 <li onClick={toggleSearch} className="search9">
                   <FaSearch />
                 </li>
@@ -132,6 +130,7 @@ const Blog = () => {
               filteredPosts.map((post, index) => (
                 <article className="blog-post" key={index}>
                   <img src={post.img} alt={post.title} />
+
                   <div className="blog-post-content">
                     <div className="blog-post-meta">
                       <span>{post.meta}</span>

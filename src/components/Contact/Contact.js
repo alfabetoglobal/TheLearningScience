@@ -12,7 +12,7 @@ const ContactUs = () => {
 
       <div className="contact-us">
         <div className="contact-us-header">
-          {/* <img src="https://static.wixstatic.com/media/11062b_b1015cefa07e4c0b82f6601db2d1028ff000.jpg/v1/fill/w_980,h_352,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/11062b_b1015cefa07e4c0b82f6601db2d1028ff000.jpg" alt="Contact Us" className="contact-image" /> */}
+          
           <ReactPlayer
             className="video"
             
@@ -23,10 +23,7 @@ const ContactUs = () => {
             height="30rem"
             width="100%"
           />
-          {/* <source src="https://video.wixstatic.com/video/11062b_b1015ce…/720p/mp4/file" type="video/mp4" /> */}
-          {/* <video id="comp-kwwd6xxl_video" className="K8MSra" src="https://video.wixstatic.com/video/11062b_b1015cefa07e4c0b82f6601db2d1028f/720p/mp4/file.mp4" style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;" /> */}
-          {/* <video src={} /> */}
-          {/* <video src="https://video.wixstatic.com/video/11062b_b1015cefa07e4c0b82f6601db2d1028f/720p/mp4/file.mp4"  />  */}
+        
           <h1>Contact Us</h1>
         </div>
         <div className="contact-details">
@@ -45,13 +42,7 @@ const ContactUs = () => {
           </div>
           <div className="contact-item">
             <h2>Follow us</h2>
-            {/* <p>
-              <i className="fa-brands fa-facebook-f"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-linkedin-in"></i>
-              <i className="fa-brands fa-youtube"></i>
-              <i className="fa-brands fa-twitter"></i>
-            </p> */}
+           
             <br />
           
             <div className="social">

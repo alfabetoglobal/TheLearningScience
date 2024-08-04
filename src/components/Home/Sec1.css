@@ -143,6 +143,18 @@
     }
 }
 
+@media (max-width: 1200px){
+  .content {
+    margin-top: 50px;
+    margin-left: 20px;
+    
+  }
+
+  .form-container  {
+    margin-right: 20px;
+  }
+}
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .main-content {
@@ -184,7 +196,7 @@
 
 @media (max-width: 768px) {
   .Sec1-header {
-    
+  
     text-align: center;
   }
 
@@ -192,13 +204,13 @@
     margin-left: 10px;
   }
 
-  .Sec1-contact .phone {
+  /* .Sec1-contact .phone {
     display: none;
-  }
-
+  } */
+/* 
   .Sec1-contact img {
     margin-right: 5px;
-  }
+  } */
   .logo {
     margin-top: 2px;
   }
@@ -222,10 +234,10 @@
 .nav ul.show {
     display: flex;
   }
-
+/* 
   .Sec1-contact {
     text-align: left;
-  }
+  } */
 
   .nav li {
     margin: 10px 0;
@@ -271,9 +283,9 @@
     margin-right: 250px;
   }
 
-  .Sec1-contact i{
+  /* .Sec1-contact i{
     display: none;
-  }
+  } */
 
   /*.Sec1-content p {
     font-size: 14px;

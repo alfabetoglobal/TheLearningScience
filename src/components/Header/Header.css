@@ -28,7 +28,7 @@
   text-align: center;
   margin-top: 8px;
   justify-content: center;
-  margin-right: 50px;
+  margin-right: 40px;
   color: #000;
 }
 
@@ -101,19 +101,16 @@
   display: flex; /* Show when .show class is added */
 }
 
-
 .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-   
 }
 
 .nav li {
   margin-right: 30px;
   margin-left: 30px;
-  
 }
 
 .nav a {
@@ -143,9 +140,44 @@
   display: none;
 }
 
-
 /* Mobile and Tablet styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .Sec1-contact {
+    height: 35px;
+    overflow: hidden;
+    
+  }
+
+  .Sec1-contact i,
+  .Sec1-contact img {
+    font-size: 13px;
+    margin: 2px;
+  }
+
+  .Sec1-contact .envelope{
+    margin-top: 9px;
+  }
+
+  .Sec1-contact p {
+    display: none; /* Hide the text */
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social i {
+    font-size: 20px;
+    margin: 0 2px;
+  }
+
+  .social i img {
+    width: 18px;
+    height: 18px;
+  }
+
+
+
   .navbar1 {
     display: none; /* Hide the full navbar on mobile and tablet */
     width: 100%;
@@ -187,5 +219,36 @@
     margin-right: 20px;
     background: none;
     border: none;
+  }
+}
+/* 
+@media (min-width: 540px ){
+  .Sec1-contact p {
+    color: red;
+  }
+} */
+
+@media(max-width:1300px) {
+  .nav {
+    margin-left: 5px;
+  }
+
+  .navbar1 {
+    margin-right: 100px;
+  }
+
+  .nav ul li {
+    width: 90px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar1 {
+    margin-right: 40px;
+  }
+
+  .nav ul li {
+    margin-left: 1px;
   }
 }

@@ -120,14 +120,21 @@
   }
 
   .contact-details {
-  
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  .social {
-    margin-left: 30px;
+  /* .social {
+    margin-left: 2px;
   }
+
+  .Sec1-contact i {
+    margin-right: 10px;
+  }
+
+  .social a {
+    margin-right: 1px;
+  } */
 
   .contact-item {
     flex: 1 1 100%;

@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between; /* Distributes space between items */
+  /* justify-content: space-between;  */
 }
 
 .blog-header ul li {
@@ -88,7 +88,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  position: relative; /* Add this for the dropdown positioning */
+  position: relative; 
 }
 
 .blog-header nav ul li {
@@ -146,7 +146,7 @@
 }
 
 .blog-post img {
-  width: 500px;
+  width: 400px;
   height: auto;
   margin-right: 20px;
 }
@@ -185,8 +185,13 @@
 @media (max-width: 720px) {
   .blog-header ul {
     flex-wrap: wrap;
-    justify-content: center; /* Center items */
+    /* justify-content: center;  */
   }
+
+/* 
+  .blog-header nav ul liz {
+    color: red;
+  } */
 
   .blog-post {
     flex-direction: column;
