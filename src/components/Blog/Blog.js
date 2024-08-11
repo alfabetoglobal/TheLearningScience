@@ -9,6 +9,7 @@ const Blog = () => {
   const [moreOptionsVisible, setMoreOptionsVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchVisible, setSearchVisible] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const blogPosts = [
     {
@@ -41,6 +42,14 @@ const Blog = () => {
 
   const toggleMoreOptions = () => {
     setMoreOptionsVisible(!moreOptionsVisible);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
   };
 
   const handleSearchChange = (e) => {
@@ -89,25 +98,26 @@ const Blog = () => {
                   </Link>
                 </li>
                 <li className="more" onClick={toggleMoreOptions}>
-                  <button className="nav-button">More</button>
-                  {moreOptionsVisible && (
-                    <ul className="dropdown">
-                      <li>
-                        <Link to="/option1">R Programming Language</Link>
-                      </li>
-                      <li>
-                        <Link to="/option2">Lifestyle</Link>
-                      </li>
-                      <li>
-                        <Link to="/option3">Competitive Exams</Link>
-                      </li>
-                      <li>
-                        <Link to="/option4">Misc</Link>
-                      </li>
-                      <li>
-                        <Link to="/option5">World History | UPSC</Link>
-                      </li>
-                    </ul>
+                  <button className="nav-button" onClick={toggleDropdown}>
+                    More
+                  </button>
+                  {isDropdownOpen && (
+                    <div
+                      className={`fullscreen-dropdown ${
+                        isDropdownOpen ? "show" : ""
+                      }`}
+                    >
+                      <div className="dropdown-options">
+                        <span className="close-button" onClick={closeDropdown}>
+                          &times;
+                        </span>
+                        <a href="#option1">R Programming Language</a>
+                        <a href="#option2">Lifestyle</a>
+                        <a href="#option3">Competitive Exams</a>
+                        <a href="#option4">Misc</a>
+                        <a href="#option5">World History | UPSC</a>
+                      </div>
+                    </div>
                   )}
                 </li>
                 <li onClick={toggleSearch} className="search9">

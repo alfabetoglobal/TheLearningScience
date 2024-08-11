@@ -9,6 +9,53 @@
   padding: 10px 20px;
 }
 
+/* Styles for the full-screen dropdown */
+.fullscreen-dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fullscreen-dropdown.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.dropdown-options {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dropdown-options a {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #434343;
+  text-decoration: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
 .blog-header nav {
   margin: 0 auto;
   max-width: 1200px;

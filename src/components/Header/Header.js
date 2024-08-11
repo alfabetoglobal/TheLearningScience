@@ -9,6 +9,10 @@ const Header = () => {
     setIsNavVisible((prevState) => !prevState); // Toggle visibility
   };
 
+  const handleBackClick = () => {
+    setIsNavVisible(false); // Hide the nav when back button is clicked
+  };
+
   return (
     <div className="static-nav">
       <div className="Sec1-contact">
@@ -97,6 +101,9 @@ const Header = () => {
           ☰
         </button>
         <nav className={`navbar1 ${isNavVisible ? "show" : ""}`}>
+          <button className="back-button" onClick={handleBackClick}>
+            ←
+          </button>
           <div className="nav">
             <ul className={isNavVisible ? "show" : ""}>
               <li>

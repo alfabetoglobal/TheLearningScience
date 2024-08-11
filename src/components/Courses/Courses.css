@@ -163,16 +163,23 @@ h1 {
     padding: 30px 15px;
   }
 
+  
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+    background: none;
+    margin-right: 20px;
+  }
+
   .h1-head {
     font-size: 20px;
     padding: 20px;
     margin-left: 100px;
   }
 
-  .arrowR {
-    margin-left: 513px;
-    margin-top: -49px;
-  }
+  
 
   .arrowL,
   .arrowR {
@@ -222,13 +229,13 @@ h1 {
   .arrowL,
   .arrowR {
     font-size: 16px;
-    left: 5px;
+    left: 8px;
     right: 5px;
   }
 
   .arrowR {
-    margin-left: 360px;
-    margin-top: -49px;
+    margin-left: 365px;
+    margin-top: -46px;
   }
 
   .no-programs p {
@@ -263,7 +270,7 @@ h1 {
 }
 
 /* Specific for iPhone SE */
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .programs-container {
     margin-top: 150px;
     padding: 10px 5px;
@@ -280,10 +287,6 @@ h1 {
     right: 5px;
   }
 
-  .arrowR {
-    margin-left: 360px;
-    margin-top: -49px;
-  }
 
   .tabs {
     gap: 1px;
@@ -307,6 +310,44 @@ h1 {
     font-size: 10px;
   }
 }
+
+@media(max-width: 400px){
+  .arrowR {
+    margin-left: 363px;
+    margin-top: -49px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*GenrativeAi.css*/
 
