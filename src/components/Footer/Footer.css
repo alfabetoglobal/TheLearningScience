@@ -23,3 +23,72 @@
   border-radius: 5px;
   display: inline-block;
 }
+
+
+/* Media Queries */
+
+/* Below 480px */
+@media (max-width: 479px) {
+  .footer-1 {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .footer-1 p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .countt {
+    font-size: 16px;
+    padding: 3px 8px;
+  }
+}
+
+/* 480px to 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+  .footer-1 {
+    padding: 15px;
+  }
+
+  .footer-1 p {
+    font-size: 15px;
+  }
+
+  .countt {
+    font-size: 18px;
+    padding: 4px 9px;
+  }
+}
+
+/* 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-1 {
+    padding: 20px;
+  }
+
+  .footer-1 p {
+    font-size: 16px;
+  }
+
+  .countt {
+    font-size: 19px;
+    padding: 5px 10px;
+  }
+}
+
+/* 1025px and above */
+@media (min-width: 1025px) {
+  .footer-1 {
+    padding: 20px;
+  }
+
+  .footer-1 p {
+    font-size: 16px;
+  }
+
+  .countt {
+    font-size: 19px;
+    padding: 5px 10px;
+  }
+}

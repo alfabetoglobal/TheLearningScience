@@ -1,3 +1,5 @@
+
+
 /* General Styles */
 .blog-container {
   font-family: Arial, sans-serif;
@@ -16,7 +18,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +182,8 @@
 .blog-main {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 3rem;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -229,18 +232,18 @@
 }
 
 /* Responsive styles for mobile devices */
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .blog-header ul {
     flex-wrap: wrap;
-    /* justify-content: center;  */
+    /* justify-content: center;  
   }
 
-/* 
+
   .blog-header nav ul liz {
     color: red;
-  } */
+  } 
 
-  .blog-post {
+ .blog-post {
     flex-direction: column;
   }
 
@@ -248,22 +251,23 @@
     width: 100%;
     margin-bottom: 10px;
   }
-}
+}  */
 
 /* Tablet View */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .Blog-last {
     padding: 15px;
   }
 
   .Blog-last .next-line {
     font-size: 24px;
-    padding: 15px; /* Adjust as needed */
+    padding: 15px; 
   }
-}
+} */
 
 /* Mobile View */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) */
+@media (min-width: 300px) and (max-width: 667px) {
   .Blog-last {
     padding: 10px;
   }
@@ -279,8 +283,44 @@
   }
 }
 
+@media (min-width: 668px) and (max-width: 720px){
+  .Blog-last {
+    padding: 15px;
+  }
+
+  .Blog-last .next-line {
+    font-size: 24px;
+    padding: 15px; 
+  }
+  
+
+}
+
+/*  */
+@media (max-width: 720px){
+  .blog-header ul {
+    flex-wrap: wrap;
+    /* justify-content: center;  */
+  }
+
+
+  .blog-header nav ul liz {
+    color: red;
+  } 
+
+ .blog-post {
+    flex-direction: column;
+  }
+
+  .blog-post img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} 
+
 /* Surface Duo View */
-@media (min-width: 720px) and (min-width: 540px) {
+/* @media (min-width: 720px) and (min-width: 540px) */
+@media (min-width: 1024px) and (max-width: 1400) {
   .blog-header nav {
     display: flex;
     flex-wrap: wrap;
@@ -295,3 +335,7 @@
     width: 50%; /* Adjust width for Surface Duo’s large screens */
   }
 }
+
+
+
+

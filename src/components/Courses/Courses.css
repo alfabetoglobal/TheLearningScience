@@ -4,7 +4,7 @@
   padding: 150px;
 }
 
-h1 {
+.h1-head {
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -19,7 +19,7 @@ h1 {
   scroll-behavior: smooth;
   border-bottom: 2px solid #000;
 }
-
+/* 
 .arrowL {
   position: absolute;
   color: #555;
@@ -37,6 +37,52 @@ h1 {
   transform: translateY(-50%);
   font-size: 24px;
   cursor: pointer;
+} */
+/* 
+.arrowL, .arrowR {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrowL {
+  left: 130px;
+}
+
+.arrowR {
+  right: 130px;
+}
+
+.mobile-arrow {
+  font-size: 18px;
+} */
+
+.arrowL, .arrowR {
+  position: absolute;
+  top: 33.5%;
+  transform: translateY(-58%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrowL {
+  left: 130px;
+}
+
+.arrowR {
+  right: 130px;
+}
+
+/* General styles for tabs */
+.tabs {
+  display: flex;
+ 
+  white-space: nowrap;
+  scroll-behavior: smooth;
 }
 
 .tab {
@@ -64,6 +110,7 @@ h1 {
   height: auto;
   justify-items: center;
   overflow: hidden;
+  margin-bottom: 130px;
 }
 
 .program-image {
@@ -126,198 +173,6 @@ h1 {
   margin-left: 250px;
   margin-bottom: 150px;
 }
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .arrowL,
-  .arrowR {
-    left: 5px;
-    right: 5px;
-  }
-
-  .tabs {
-    gap: 10px;
-  }
-
-  .tab {
-    padding: 12px 2%;
-    font-size: 16px;
-  }
-
-  .program-info h2 {
-    font-size: 22px;
-  }
-
-  .date {
-    font-size: 16px;
-  }
-
-  .join-button {
-    padding: 8px 40px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .programs-container {
-    padding: 30px 15px;
-  }
-
-  
-  .nav-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    border: none;
-    background: none;
-    margin-right: 20px;
-  }
-
-  .h1-head {
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 100px;
-  }
-
-  
-
-  .arrowL,
-  .arrowR {
-    font-size: 18px;
-    left: 10px;
-    right: 10px;
-  }
-
-  .tabs {
-    gap: 5px;
-  }
-
-  .tab {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .program-info h2 {
-    font-size: 18px;
-  }
-
-  .date {
-    font-size: 14px;
-  }
-
-  .join-button {
-    padding: 8px 30px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 540px) {
-  .programs-container {
-    padding: 20px 10px;
-  }
-
-  .program-details {
-    margin-bottom: 110px;
-  }
-
-  .h1-head {
-    margin-top: 100px;
-    font-size: 20px;
-    margin-left: 2px;
-  }
-
-  .arrowL,
-  .arrowR {
-    font-size: 16px;
-    left: 8px;
-    right: 5px;
-  }
-
-  .arrowR {
-    margin-left: 365px;
-    margin-top: -46px;
-  }
-
-  .no-programs p {
-    margin-left: 2px;
-  }
-
-  .tabs {
-    gap: 2px;
-  }
-
-  .tab {
-    padding: 8px;
-    font-size: 12px;
-  }
-
-  .program-info h2 {
-    font-size: 16px;
-  }
-
-  .date {
-    font-size: 12px;
-  }
-
-  .join-button {
-    padding: 6px 15px;
-    font-size: 12px;
-  }
-
-  .footer1 {
-    margin-bottom: 1px;
-  }
-}
-
-/* Specific for iPhone SE */
-@media (max-width: 374px) {
-  .programs-container {
-    margin-top: 150px;
-    padding: 10px 5px;
-  }
-
-  .h1-head {
-    font-size: 16px;
-  }
-
-  .arrowL,
-  .arrowR {
-    font-size: 14px;
-    left: 5px;
-    right: 5px;
-  }
-
-
-  .tabs {
-    gap: 1px;
-  }
-
-  .tab {
-    padding: 6px;
-    font-size: 10px;
-  }
-
-  .program-info h2 {
-    font-size: 14px;
-  }
-
-  .date {
-    font-size: 10px;
-  }
-
-  .join-button {
-    padding: 5px 10px;
-    font-size: 10px;
-  }
-}
-
-@media(max-width: 400px){
-  .arrowR {
-    margin-left: 363px;
-    margin-top: -49px;
-  }
-}
-
 
 
 
@@ -581,44 +436,156 @@ h1 {
   font-weight: 100;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .header h1 {
-    font-size: 28px;
+
+
+/* Base Styles (no media query) */
+
+/* Small Screens: max-width 479px */
+@media only screen and (max-width: 479px) {
+  .programs-container {
+    padding: 50px;
   }
 
-  .counts .line3 {
-    height: 40px;
+  .h1-head {
+    font-size: 25px;
+    margin-top: 47px;
   }
 
-  .count-item span {
+
+  .arrowL{
+    left: 32px;
+    font-size: 18px;
+    top: 170px;
+  }
+
+  .arrowR{
+    right: 32px;
+     font-size: 18px;
+     top: 170px;
+  }
+  .tabs {
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    font-size: 14px;
+    padding: 10px 2%;
+  }
+
+  .program-info h2 {
+    font-size: 20px;
+  }
+
+  .date {
     font-size: 14px;
   }
 
-  .count-item p {
-    font-size: 12px;
+  .join-button {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+
+  .no-programs p {
+    margin-left: 0;
+    width: 80%;
+    font-size: 20px;
+  }
+
+  /* GenrativeAi.css */
+  .generative-ai-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .counts {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .instructors h2, .share h2, .price h2 {
+    font-size: 20px;
+  }
+
+  .join-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .share-icons i img {
+    width: 30px;
+    height: 30px;
   }
 
   .about-section h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .about-section p {
     font-size: 14px;
   }
-
-  .join-button {
-    font-size: 14px;
-  }
 }
 
-@media (max-width: 768px) {
-  .generative-ai-container {
-    padding: 15px;
+/* Medium Screens: 480px - 768px */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .programs-container {
+    padding: 75px;
   }
 
-  .header {
-    padding: 15px;
+  .h1-head {
+    font-size: 38px;
+    margin-top: 65px;
+  }
+
+  .arrowL{
+    left: 55px;
+    top: 230px;
+  }
+
+  .arrowR{
+    right: 55px;
+     top: 230px;
+  }
+
+  
+  .tabs {
+    margin-bottom: 25px;
+  }
+
+  .tab {
+    font-size: 16px;
+    padding: 12px 3%;
+  }
+
+  .program-info h2 {
+    font-size: 22px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .join-button {
+    padding: 9px 40px;
+    font-size: 17px;
+  }
+
+  .no-programs p {
+    margin-left: 150px;
+    font-size: 25px;
+  }
+
+  /* GenrativeAi.css */
+  .generative-ai-container {
+    padding: 20px;
+    max-width: 90%;
   }
 
   .header h1 {
@@ -629,159 +596,201 @@ h1 {
     gap: 15px;
   }
 
-  .count-item span {
-    font-size: 13px;
+  .about-section {
+    grid-template-columns: 1fr;
   }
 
-  .count-item p {
-    font-size: 12px;
-  }
-
-  .about-section h2 {
-    font-size: 20px;
-  }
-
-  .about-section p {
-    font-size: 13px;
-  }
-
-  .join-button {
-    font-size: 13px;
-    padding: 8px 18px;
-  }
-
-  .share-icons i {
-    font-size: 35px;
-  }
-
-  .share-icons i img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .rightC {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 540px) {
-  .generative-ai-container {
-    padding: 10px;
-  }
-
-  .header {
-    padding: 10px;
-  }
-
-  .header h1 {
-    font-size: 24px;
-  }
-
-  .counts {
-    gap: 10px;
-  }
-
-  .count-item span {
-    font-size: 12px;
-  }
-
-  .count-item p {
-    font-size: 11px;
-  }
-
-  .about-section h2 {
-    font-size: 18px;
-  }
-
-  .about-section p {
-    font-size: 12px;
-  }
-
-  .join-button {
-    font-size: 12px;
-    padding: 6px 16px;
-  }
-
-  .share-icons i {
-    font-size: 30px;
-  }
-
-  .share-icons i img {
-    width: 16px;
-    height: 16px;
-  }
-
-  .rightC {
-    padding: 10px;
-  }
-
-  .line4 {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .About_Sect {
-    display: block;
-  }
-}
-
-@media (max-width: 375px) {
-  .header h1 {
+  .instructors h2, .share h2, .price h2 {
     font-size: 22px;
   }
 
-  .counts {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .count-item11,
-  .count-item12 {
-    margin: 0;
-  }
-
-  .count-item span {
-    font-size: 11px;
-  }
-
-  .count-item p {
-    font-size: 10px;
-  }
-
-  .about-section h2 {
-    font-size: 16px;
-  }
-
-  .about-section p {
-    font-size: 11px;
-  }
-
   .join-button {
-    font-size: 11px;
-    padding: 5px 15px;
-  }
-
-  .share-icons i {
-    font-size: 25px;
+    padding: 9px 18px;
+    font-size: 15px;
   }
 
   .share-icons i img {
-    width: 14px;
-    height: 14px;
+    width: 35px;
+    height: 35px;
   }
 
-  .rightC {
-    padding: 5px;
+  .about-section h2 {
+    font-size: 22px;
   }
 
-  .line4 {
-    width: 100%;
-    margin: 5px 0;
+  .about-section p {
+    font-size: 15px;
+  }
+}
+
+/* Large Screens: 769px - 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .programs-container {
+    padding: 100px;
   }
 
-  .instructors h2,
-  .share h2,
-  .price h2 {
+  .program-details {
+    margin-bottom: 195px;
+  }
+
+.h1-head {
+    font-size: 38px;
+    margin-top: 40px;
+  }
+
+  /* .tabs {
+    margin-bottom: 28px;
+  } */
+
+  .tab {
+    font-size: 17px;
+    padding: 13px 3%;
+  }
+
+  .program-info h2 {
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 17px;
+  }
+
+  .join-button {
+    padding: 10px 45px;
     font-size: 18px;
+  }
+
+  .no-programs p {
+    margin-left: 200px;
+    font-size: 28px;
+  }
+
+  /* GenrativeAi.css */
+  .generative-ai-container {
+    padding: 25px;
+    max-width: 85%;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .counts {
+    gap: 18px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instructors h2, .share h2, .price h2 {
+    font-size: 23px;
+  }
+
+  .join-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .share-icons i img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .about-section h2 {
+    font-size: 23px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+}
+
+/* Extra Large Screens: min-width 1025px */
+@media only screen and (min-width: 1025px) {
+  .programs-container {
+    padding: 150px;
+  }
+
+  .h1-head {
+    font-size: 30px;
+  }
+/* 
+  .tabs {
+    margin-bottom: 30px;
+  } */
+
+  .tab {
+    font-size: 18px;
+    padding: 14px 3%;
+  }
+
+  .program-info h2 {
+    font-size: 25px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .join-button {
+    padding: 10px 50px;
+    font-size: 18px;
+  }
+
+  .no-programs p {
+    margin-left: 250px;
+    font-size: 30px;
+  }
+
+  /* GenrativeAi.css */
+  .generative-ai-container {
+    padding: 30px;
+    max-width: 800px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .counts {
+    gap: 20px;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instructors h2, .share h2, .price h2 {
+    font-size: 24px;
+  }
+
+  .join-button {
+    padding: 10px 25px;
+    font-size: 18px;
+  }
+
+  .share-icons i img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-section h2 {
+    font-size: 24px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 819px) and (max-width: 1180px){
+  .arrowL{
+    top: 230px;
+    left: 84px;
+  }
+  .arrowR{
+    top: 230px;
+    right: 84px;
   }
 }

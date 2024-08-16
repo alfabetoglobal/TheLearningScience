@@ -26,15 +26,15 @@ const Header = () => {
           <p>+91-721-7667-056</p>
         </i>
 
-        <a href="/">
+        <a href="mailto:admin@thelearningscience.com">
           <img
             src="https://img.icons8.com/?size=100&id=86862&format=png&color=000000"
             alt="mail"
           />
         </a>
-        <i className="envelope"> admin@thelearningscience.com</i>
+        <i className="envelope" ><a href="mailto:admin@thelearningscience.com"> admin@thelearningscience.com</a></i>
 
-        <div className="social">
+        <div className="social-h">
           <a href="https://www.facebook.com/TheLearningScienceOfficials/">
             <i className="facebook">
               <img

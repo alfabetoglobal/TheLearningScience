@@ -312,7 +312,7 @@ const Courses = () => {
           )}
         </div>
       </div>
-      <Footer />
+      <Footer className="Course-footer" />
     </>
   );
 };

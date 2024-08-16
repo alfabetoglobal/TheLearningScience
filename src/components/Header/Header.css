@@ -39,21 +39,21 @@
   height: 15px;
 }
 
-.social {
+.social-h {
   display: flex;
   align-items: center;
   font-size: 15px;
 }
 
-.social i {
+.social-h i {
   font-size: 15px;
   color: #000;
   margin-right: 10px;
 }
 
-.social i img {
-  width: 22px;
-  height: 22px;
+.social-h i img {
+  width: 20px;
+  height: 21px;
   border-radius: 50%;
 }
 
@@ -122,82 +122,25 @@
 
 .nav-toggle {
   display: none;
+} 
+
+.envelope a{
+cursor: pointer;
+color: #000;
+margin-right: 4px;
+text-decoration: none;
 }
 
-/* Mobile and Tablet styles */
-@media (max-width: 767px) {
+/* Media Queries */
+
+/* Below 480px */
+@media (max-width: 479px) {
   .Sec1-contact {
-    height: 35px;
-    overflow: hidden;
+    flex-direction: row;
+    font-size: 16px;
   }
 
-  .Sec1-contact i,
-  .Sec1-contact img {
-    font-size: 13px;
-    margin: 2px;
-  }
-
-  .Sec1-contact .envelope {
-    margin-top: 9px;
-  }
-
-  .Sec1-contact p {
-    display: none; /* Hide the text */
-  }
-
-  .social {
-    justify-content: center;
-  }
-
-  .social i {
-    font-size: 20px;
-    margin: 0 2px;
-  }
-
-  .social i img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .navbar1 {
-    display: none; /* Hide the full navbar on mobile and tablet */
-    width: 100%;
-    background-color: rgba(171,198,241,0.9);
-    position: fixed; /* Change to fixed positioning */
-    top: 0; /* Full height */
-    left: 0;
-    height: 100%; /* Full height */
-    border-radius: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 999; /* Ensure it covers other content */
-    transition: opacity 0.3s ease;
-  }
-
-  .navbar1.show {
-    display: flex; /* Show the navbar when toggle button is clicked */
-    opacity: 1;
-  }
-
-  .nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-    width: 80%; /* Set a fixed width for the mobile view */
-    display: flex; /* Ensure ul is visible */
-    padding: 0;
-  }
-
-  .nav ul.show {
-    display: flex; /* Show ul when toggle button is clicked */
-  }
-
-  .nav li {
-    margin: 15px 0; /* Adjust margin for mobile */
-  }
-
-  .nav a {
-    font-size: 20px; /* Adjust font size for mobile */
-  }
+  
 
   .nav-toggle {
     display: block; /* Show the toggle button on mobile and tablet */
@@ -223,80 +166,121 @@
     cursor: pointer;
     z-index: 1001; /* Ensure it appears above other elements */
   }
-  
-}
-
-@media (min-width: 768px) {
-  .back-button {
-    display: none; /* Ensure back button does not appear on desktop */
-  }
-
-  .nav-toggle{
-    border: none;
-    background: none;
-  }
-
-   .h1-head {
-    font-size: 25px;
-    padding: 20px;
-    margin-top: 103px;
-    margin-left: -20px;
-  }
- 
-}
-
-
-/* Media queries for various screen sizes */
-@media (max-width: 1300px) {
-  .nav {
-    margin-left: 5px;
-  }
 
   .navbar1 {
-    margin-right: 100px;
-  }
-
-  .nav ul li {
-    width: 150px;
-    margin-right: 5px;
-  }
+  display: none; /* Hidden by default */
 }
 
-@media (max-width: 1100px) {
-  .navbar1 {
-    margin-right: 40px;
-  }
-
-  .nav ul li {
-    margin-left: 1px;
-  }
+.navbar1.show {
+  display: flex; /* Show when .show is added */
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Cover the full height */
+  background-color: #abc6f1; /* Background color */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
+.nav ul {
+  display: flex;
+  flex-direction: column;
+}
 
-@media(max-width: 1024px){
-   .navbar1 {
+.nav ul li {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+  .Sec1-contact .phone {
     display: none;
-    width: 100%;
-    background-color: rgba(171,198,241,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    transition: opacity 0.3s ease;
   }
 
-  .navbar1.show {
-    display: flex; /* Show the navbar when toggle button is clicked */
-    opacity: 1;
+  /* .Sec1-contact .envelope {
+    display: none;
+  } */
+
+  .Sec1-contact i {
+    margin-right: 0;
+    font-size: 14.5px;
+  }
+
+  .Sec1-contact img {
+    width: 12px;
+    height: 12px;
+    margin-left: -4px;
+  }
+
+  .Sec1-contact .social a i {
+    font-size: 10px;
+  }
+
+  .Sec1-header {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .navbar1 {
+    display: none; /* Hide navbar on small screens */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* 480px to 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+  .Sec1-contact {
+    font-size: 18px;
+  }
+  .Sec1-contact .phone {
+    display: none;
+  }
+
+  .Sec1-contact i {
+    margin-right: 3px;
+  }
+
+  .Sec1-contact img {
+    width: 14px;
+    height: 14px;
+  }
+
+  
+
+  .nav-toggle {
+    display: block; /* Show the toggle button on mobile and tablet */
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+  }
+  .back-button {
+    display: none; /* Hide the back button by default */
   }
 
   .navbar1.show .back-button {
-    display: block;
+    display: block; /* Show the back button when nav is visible */
     position: absolute;
     top: 20px;
     left: 20px;
@@ -305,7 +289,120 @@
     border: none;
     color: #000;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1001; /* Ensure it appears above other elements */
   }
 
+
+  .Sec1-header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .navbar1 {
+    display: none; /* Hide navbar on medium screens */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
+
+/* 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Sec1-contact {
+    font-size: 18px;
+  }
+
+  .Sec1-contact .envelope {
+    margin-right: 25px;
+  }
+
+  .Sec1-contact i {
+    margin-right: 5px;
+  }
+
+  .Sec1-contact img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Sec1-header {
+    height: 55px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar1 .back-button {
+    display: none;
+  }
+
+  .logo p {
+    font-size: 15px;
+  }
+
+  .navbar1 {
+    display: flex;
+    margin-right: 55px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* 1025px and above */
+@media (min-width: 1025px) {
+  .Sec1-contact {
+    font-size: 20px;
+  }
+
+  .Sec1-contact i {
+    margin-right: 10px;
+  }
+
+
+  .Sec1-contact img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Sec1-header {
+    height: 55px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo p {
+    font-size: 15px;
+  }
+
+  .navbar1 {
+    display: flex;
+    margin-right: 250px;
+  }
+
+  .navbar1 .back-button {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+

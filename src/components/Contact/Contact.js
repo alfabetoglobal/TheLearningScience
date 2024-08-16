@@ -1,4 +1,3 @@
-
 import "./Contact.css";
 
 import ReactPlayer from "react-player";
@@ -12,10 +11,8 @@ const ContactUs = () => {
 
       <div className="contact-us">
         <div className="contact-us-header">
-          
           <ReactPlayer
             className="video"
-            
             playing={true}
             controls={false}
             loop={true}
@@ -23,7 +20,7 @@ const ContactUs = () => {
             height="30rem"
             width="100%"
           />
-        
+
           <h1>Contact Us</h1>
         </div>
         <div className="contact-details">
@@ -42,9 +39,9 @@ const ContactUs = () => {
           </div>
           <div className="contact-item">
             <h2>Follow us</h2>
-           
+
             <br />
-          
+
             <div className="social">
               <a href="https://www.facebook.com/TheLearningScienceOfficials/">
                 <i className="facebook">
@@ -122,24 +119,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
