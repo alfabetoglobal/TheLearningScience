@@ -62,7 +62,9 @@
   justify-content: space-between;
   align-items: center;
   height: 55px;
-  background: linear-gradient(to right, #f9fafc, #1c05b3, #f2f3f5);
+  /* background: linear-gradient(to right, #d1ccf2,#8f85eb, #78a1f2, #4127ed); */
+  background: linear-gradient(to right, #c7e2ed, #9c61fa, #9961ed, #5f58e0, #1f3aea);
+
   color: #060606;
   position: relative;
 }

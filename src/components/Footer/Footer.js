@@ -29,6 +29,38 @@ function Footer() {
     }
   }, []);
 
+  useEffect(() => {
+    const sendVisitData = async () => {
+      const timestamp = new Date().toISOString();
+      const referrerUrl = document.referrer || "Direct";
+      const deviceType = /Mobi|Android/i.test(navigator.userAgent)
+        ? "mobile"
+        : "desktop";
+
+      const visitData = {
+        timestamp,
+        referrerUrl,
+        deviceType,
+      };
+
+      try {
+        const response = await axios.post(
+          "https://3aq7mrmnog.execute-api.ap-northeast-1.amazonaws.com/v1/visitCounter",
+          visitData
+        );
+
+        if (response.status === 200) {
+          setCounter((prevCounter) => prevCounter + 1);
+          console.log("Data recorded successfully:", response.data);
+        }
+      } catch (error) {
+        console.error("Error recording visit:", error);
+      }
+    };
+
+    sendVisitData();
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFeedback({
@@ -69,7 +101,7 @@ function Footer() {
       <div className="row1 row">
         <div className="col-md-3">
           <h4 className="mt-5 fs-3 p-2">Important Links</h4>
-          <ul style={{ textDecoration: "none" }}>
+          <ul style={{ textDecoration: "none", marginLeft: "-20px" }}>
             <li className="mb-1">
               <a href="/link1">Programming Languages</a>
             </li>
@@ -86,7 +118,7 @@ function Footer() {
         </div>
         <div className="col-md-3">
           <h4 className="mt-5 fs-3 p-2">Quick Links</h4>
-          <ul>
+          <ul style={{ marginLeft: "-20px" }}>
             <li className="mb-1">
               <a href="/">Home</a>
             </li>
@@ -102,7 +134,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col-md-6 p-5">
-          <h4 className=" fs-3 p-2">Feedback and Suggestions</h4>
+          <h4 className="fs-3 p-2">Feedback and Suggestions</h4>
           <form
             className="border p-3 shadow"
             style={{
