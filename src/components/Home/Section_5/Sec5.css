@@ -18,6 +18,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 
 .headeer {

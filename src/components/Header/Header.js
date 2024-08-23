@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="static-nav">
-      <div className="Sec1-contact">
+      {/* <div className="Sec1-contact">
         <a href="/">
           <img
             src="https://img.icons8.com/?size=100&id=84908&format=png&color=000000"
@@ -84,7 +84,7 @@ const Header = () => {
             </i>
           </a>
         </div>
-      </div>
+      </div>*/}
       <div className="Sec1-header">
         <div className="logo">
           <img
@@ -92,9 +92,9 @@ const Header = () => {
             alt="logo"
           />
           <p>
-            The Learning Science
-            <br />
-            (An Alfabeto Group Venture)
+            The <br />
+            Learning <br />
+            Science
           </p>
         </div>
         <button className="nav-toggle" onClick={toggleNav}>

@@ -1,8 +1,10 @@
 .main-content {
     display: flex;
-    
+    padding-bottom: 20px;
       background: linear-gradient(to right, #040a7c, #202475, #3b3597, #b7b5f1);
   }
+
+  
   
   .left,
   .right {
@@ -62,7 +64,7 @@
   
   .form-container {
     margin-top: 100px;
-    padding: 30px;
+    padding: 10px;
     background-color: #808de1;
     border: 1px solid #73799d;
     border-radius: 10px;
@@ -76,20 +78,20 @@
   
   .input-group label {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
   
   .input-group input {
     width: 100%;
-    padding: 10px;
-    font-size: 18px;
+    padding: 4px;
+    font-size: 15px;
     border: 1px solid #ccc;
   }
   
   .input-group input[type="checkbox"] {
     width: auto;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   
   .checkbox-container {
@@ -101,24 +103,25 @@
   .right-checkboxes {
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
   
   .checkbox-group {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
   .checkbox-group label {
-    font-size: 18px;
-    margin-left: 10px;
+    font-size: 15px;
+    margin-left: 3px;
   }
   
   .form-container button[type="submit"] {
     background-color: #060f70;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 6px 12px;
     display: inline-block;
     font-size: 18px;
     cursor: pointer;
@@ -255,6 +258,7 @@
 
     .content {
         margin-left: 200px;
+        margin-top: 140px;
     }
 
     .content h1 {

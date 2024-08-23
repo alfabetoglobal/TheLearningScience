@@ -10,7 +10,7 @@ const Offerings = () => {
       <div className="offerings-grid">
         <div className="offering">
           <div className="circle">1</div>
-          <h2>Professional Certification in Data Science & Machine Learning</h2>
+          <h2>Pre-Preparation Courses Information</h2>
           <p>
             Explore our Data Science Certification Program, tailor-made for
             aspiring data scientists. Dive into specialized areas like machine

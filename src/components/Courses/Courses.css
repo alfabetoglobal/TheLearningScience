@@ -19,46 +19,27 @@
   scroll-behavior: smooth;
   border-bottom: 2px solid #000;
 }
-/* 
-.arrowL {
-  position: absolute;
-  color: #555;
-  left: 135px;
-  margin-top: 10px;
-  font-size: 24px;
+
+.dropdown-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dropdown-button {
+  padding: 10px 20px;
+  background-color: #002a85;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.arrowR {
-  position: absolute;
-  color: #555;
-  right: 135px;
-  margin-top: -45px;
-  transform: translateY(-50%);
-  font-size: 24px;
-  cursor: pointer;
-} */
-/* 
-.arrowL, .arrowR {
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+.link-btn{
+  text-decoration: none;
+  color: #000;
 }
 
-.arrowL {
-  left: 130px;
-}
 
-.arrowR {
-  right: 130px;
-}
-
-.mobile-arrow {
-  font-size: 18px;
-} */
 
 .arrowL, .arrowR {
   position: absolute;
@@ -126,7 +107,6 @@
 .program-info h2 {
   font-size: 25px;
   color: #000;
-  cursor: pointer;
   text-decoration: none;
   margin-bottom: 10px;
 }

@@ -1,3 +1,192 @@
+// // import React from 'react'
+// import { useState } from "react";
+// import "./Sec1.css";
+
+// const Sec1 = () => {
+//   const [fullName, setFullName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [contactNumber, setContactNumber] = useState("");
+//   const [selectedCourse, setSelectedCourse] = useState([]);
+
+//   const handleFullNameChange = (event) => {
+//     setFullName(event.target.value);
+//   };
+
+//   const handleEmailChange = (event) => {
+//     setEmail(event.target.value);
+//   };
+
+//   const handleContactNumberChange = (event) => {
+//     setContactNumber(event.target.value);
+//   };
+
+//   const handleCourseChange = (event) => {
+//     const value = event.target.value;
+//     if (event.target.checked) {
+//       setSelectedCourse([...selectedCourse, value]);
+//     } else {
+//       setSelectedCourse(selectedCourse.filter((item) => item !== value));
+//     }
+//   };
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     console.log("Full Name:", fullName);
+//     console.log("Email:", email);
+//     console.log("Contact Number:", contactNumber);
+//     console.log("Selected Course:", selectedCourse);
+//   };
+//   return (
+//     <>
+//       <div className="main-content">
+//         <div className="left">
+//           <div className="content">
+//             <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3>
+//             <br />
+//             <div className="heading">
+//               <h1>
+//                 Unlock Your <br />
+//                 Potential &<br />
+//                 Your Dream Job
+//               </h1>
+//             </div>
+//             <p>
+//               Dream Tech Jobs Await: Master Software Development <br />
+//               and Data Science with AI-Powered Courses!
+//             </p>
+//             <button>Get Started</button>
+//             <br />
+//             <br />
+//             <br />
+//             <p>
+//               Unlock Your Future: Join Us to Land Jobs in 500+ Global Tech
+//               Titans
+//             </p>
+//           </div>
+//         </div>
+//         <div className="right">
+//           <div className="form-container">
+//             <form onSubmit={handleSubmit}>
+//               <div className="input-group">
+//                 <label>Full Name (Required)</label>
+//                 <input
+//                   type="text"
+//                   id="full-name"
+//                   placeholder="Enter Your Name"
+//                   value={fullName}
+//                   onChange={handleFullNameChange}
+//                   required
+//                 />
+//               </div>
+//               <div className="input-group">
+//                 <label>Email (Required)</label>
+//                 <input
+//                   type="email"
+//                   id="email"
+//                   placeholder="Enter your Email"
+//                   value={email}
+//                   onChange={handleEmailChange}
+//                   required
+//                 />
+//               </div>
+//               <div className="input-group">
+//                 <label>Contact Number (Required)</label>
+//                 <input
+//                   type="tel"
+//                   id="contact-number"
+//                   placeholder="Enter your Contact Number"
+//                   value={contactNumber}
+//                   onChange={handleContactNumberChange}
+//                   required
+//                 />
+//               </div>
+//               <div className="input-group">
+//                 <label>Select Course (Required)</label>
+//                 <div className="checkbox-container">
+//                   <div className="left-checkboxes">
+//                     <div className="checkbox-group">
+//                       <input
+//                         type="checkbox"
+//                         id="full-stack-development"
+//                         value="Full Stack Development"
+//                         checked={selectedCourse.includes(
+//                           "Full Stack Development"
+//                         )}
+//                         onChange={handleCourseChange}
+//                       />
+//                       <label htmlFor="full-stack-development">
+//                         Full Stack Development
+//                       </label>
+//                     </div>
+//                     <div className="checkbox-group">
+//                       <input
+//                         type="checkbox"
+//                         id="cloud-computing"
+//                         value="Cloud Computing"
+//                         checked={selectedCourse.includes("Cloud Computing")}
+//                         onChange={handleCourseChange}
+//                       />
+//                       <label htmlFor="cloud-computing">
+//                         Cloud Based Technology
+//                       </label>
+//                     </div>
+//                     <div className="checkbox-group">
+//                       <input
+//                         type="checkbox"
+//                         id="placement prepreparation Course"
+//                         value="Placement prepreparation Course"
+//                         checked={selectedCourse.includes(
+//                           "Placement prepreparation Course"
+//                         )}
+//                         onChange={handleCourseChange}
+//                       />
+//                       <label htmlFor="placement-prepreparation-Course">
+//                         <b>Placement Prepreparation Course</b>
+//                       </label>
+//                     </div>
+//                   </div>
+//                   <div className="right-checkboxes">
+//                     <div className="checkbox-group">
+//                       <input
+//                         type="checkbox"
+//                         id="data-science"
+//                         value="Data Science"
+//                         checked={selectedCourse.includes("Data Science")}
+//                         onChange={handleCourseChange}
+//                       />
+//                       <label htmlFor="data-science">Data Science</label>
+//                     </div>
+//                     <div className="checkbox-group">
+//                       <input
+//                         type="checkbox"
+//                         id="blockchain-technology"
+//                         value="Blockchain Technology"
+//                         checked={selectedCourse.includes(
+//                           "Blockchain Technology"
+//                         )}
+//                         onChange={handleCourseChange}
+//                       />
+//                       <label htmlFor="blockchain-technology">
+//                         Blockchain Technology
+//                       </label>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </div>
+//               <button type="submit">Submit</button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Sec1;
+
+
+
+
 // import React from 'react'
 import { useState } from "react";
 import "./Sec1.css";
@@ -36,12 +225,14 @@ const Sec1 = () => {
     console.log("Contact Number:", contactNumber);
     console.log("Selected Course:", selectedCourse);
   };
+
   return (
     <>
       <div className="main-content">
         <div className="left">
           <div className="content">
-            <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3><br/>
+            <h3>LEARN WHAT THE INDUSTRY DEMANDS</h3>
+            <br />
             <div className="heading">
               <h1>
                 Unlock Your <br />
@@ -53,19 +244,23 @@ const Sec1 = () => {
               Dream Tech Jobs Await: Master Software Development <br />
               and Data Science with AI-Powered Courses!
             </p>
-            <button>Get Started</button><br/><br/><br/>
+            <button>Get Started</button>
+            <br />
+            <br />
+            <br />
             <p>
               Unlock Your Future: Join Us to Land Jobs in 500+ Global Tech
               Titans
             </p>
           </div>
         </div>
-
         <div className="right">
           <div className="form-container">
             <form onSubmit={handleSubmit}>
               <div className="input-group">
-                <label>Full Name (Required)</label>
+                <label>
+                  Full Name <span className="required">*</span>
+                </label>
                 <input
                   type="text"
                   id="full-name"
@@ -76,7 +271,9 @@ const Sec1 = () => {
                 />
               </div>
               <div className="input-group">
-                <label>Email (Required)</label>
+                <label>
+                  Email <span className="required">*</span>
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -87,18 +284,24 @@ const Sec1 = () => {
                 />
               </div>
               <div className="input-group">
-                <label>Contact Number (Required)</label>
+                <label>
+                  Contact Number <span className="required">*</span>
+                </label>
                 <input
                   type="tel"
                   id="contact-number"
                   placeholder="Enter your Contact Number"
                   value={contactNumber}
                   onChange={handleContactNumberChange}
+                  pattern="[0-9]*"
+                  inputMode="numeric"
                   required
                 />
               </div>
               <div className="input-group">
-                <label>Select Course (Required)</label>
+                <label>
+                  Select Course <span className="required">*</span>
+                </label>
                 <div className="checkbox-container">
                   <div className="left-checkboxes">
                     <div className="checkbox-group">
@@ -115,7 +318,7 @@ const Sec1 = () => {
                         Full Stack Development
                       </label>
                     </div>
-                    <div className="checkbox-group">
+                    {/* <div className="checkbox-group">
                       <input
                         type="checkbox"
                         id="cloud-computing"
@@ -123,20 +326,22 @@ const Sec1 = () => {
                         checked={selectedCourse.includes("Cloud Computing")}
                         onChange={handleCourseChange}
                       />
-                      <label htmlFor="cloud-computing">Cloud Computing</label>
-                    </div>
+                      <label htmlFor="cloud-computing">
+                        Cloud Based Technology
+                      </label>
+                    </div> */}
                     <div className="checkbox-group">
                       <input
                         type="checkbox"
-                        id="artificial-intelligence"
-                        value="Artificial Intelligence"
+                        id="placement-prepreparation-course"
+                        value="Placement prepreparation Course"
                         checked={selectedCourse.includes(
-                          "Artificial Intelligence"
+                          "Placement prepreparation Course"
                         )}
                         onChange={handleCourseChange}
                       />
-                      <label htmlFor="artificial-intelligence">
-                        Artificial Intelligence
+                      <label htmlFor="placement-prepreparation-course">
+                        <b>Placement Pre-preparation Course</b>
                       </label>
                     </div>
                   </div>
@@ -151,7 +356,7 @@ const Sec1 = () => {
                       />
                       <label htmlFor="data-science">Data Science</label>
                     </div>
-                    <div className="checkbox-group">
+                    {/* <div className="checkbox-group">
                       <input
                         type="checkbox"
                         id="blockchain-technology"
@@ -163,6 +368,18 @@ const Sec1 = () => {
                       />
                       <label htmlFor="blockchain-technology">
                         Blockchain Technology
+                      </label>
+                    </div> */}
+                    <div className="checkbox-group">
+                      <input
+                        type="checkbox"
+                        id="cloud-computing"
+                        value="Cloud Computing"
+                        checked={selectedCourse.includes("Cloud Computing")}
+                        onChange={handleCourseChange}
+                      />
+                      <label htmlFor="cloud-computing">
+                        Cloud Based Technology
                       </label>
                     </div>
                   </div>

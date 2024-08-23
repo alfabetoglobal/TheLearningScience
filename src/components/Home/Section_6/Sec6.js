@@ -3,9 +3,14 @@ import "./Sec6.css";
 
 function MainContent() {
   return (
-    <div className="page-6" >
+    <div className="page-6">
       <div className="Section-6">
+        <h1 className="text-center mb-5">
+          {" "}
+          Unlock the formula for a thriving career
+        </h1>
         <div className="Main-content">
+          {/* <h1> Unlock the formula for a thriving career</h1> */}
           <div className="background-images">
             <img
               src="https://static.wixstatic.com/media/e2871454f2c049049d857dbcb8df2b21.jpg/v1/fill/w_1424,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e2871454f2c049049d857dbcb8df2b21.jpg"
@@ -21,7 +26,9 @@ function MainContent() {
           <br />
           <br />
           <br />
-          <br /><br/><br/>
+          <br />
+          <br />
+          <br />
           <div className="text-section">
             <h2>
               Step into the realm of unparalleled success.
