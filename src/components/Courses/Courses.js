@@ -10,26 +10,59 @@ const programsData = {
   "all-programs": [
     {
       id: "12345",
-      img: "https://static.wixstatic.com/media/594faf_de539b1266cd45f2861f4e4b9587b7b6~mv2.png/v1/fit/w_800,h_600,al_c,q_90/file.webp",
-      title: "Generative AI Essentials & Applications",
-      date: "Jul 20, 2024 - Jul 31, 2024",
-      price: "₹7,000.00",
+      img: "https://www.cdmi.in/courses@2x/data-science.webp",
+      title: " Data Science",
+      date: "Aug 18, 2024 - Aug 31, 2025",
+      price: "₹9,000.00",
     },
   ],
-  "data-science": [],
-  fullStack: [],
-  cloud: [],
-  block: [],
-  "ml-di-c": [],
-  ai: [
+  "data-science": [
     {
-      id: "12345",
-      img: "https://static.wixstatic.com/media/594faf_de539b1266cd45f2861f4e4b9587b7b6~mv2.png/v1/fit/w_800,h_600,al_c,q_90/file.webp",
-      title: "Generative AI Essentials & Applications",
-      date: "Jul 20, 2024 - Jul 31, 2024",
-      price: "₹7,000.00",
+      id: "12346",
+      img: "https://www.cdmi.in/courses@2x/data-science.webp",
+      title: "Essentials of Data Science",
+      date: "Aug 18, 2024 - Sep 31, 2025",
+      price: "₹8,000.00",
     },
   ],
+  fullStack: [
+    {
+      id: "12347",
+      img: "https://myways-public-data-prod.s3.ap-south-1.amazonaws.com/myways-resource-library/blogs/roadmap-to-become-a-full-stack-developer_Image_blogs.png",
+      title: "Full Stack Essentials: Frontend to Backend",
+      date: "Apr 18, 2024 - Jan 31, 2025",
+      price: "₹5,000.00",
+    },
+  ],
+  cloud: [
+    {
+      id: "12348",
+      img: "https://tcagurgaon.in/BackendImages/CourseImages/cs-it-training-new-technology-cloud-computing.jpg",
+      title: "Cloud Technology Bootcamp",
+      date: "Feb 18, 2024 - Mar 05, 2025",
+      price: "₹6,000.00",
+    },
+  ],
+  placement: [
+    {
+      id: "12349",
+      img: "https://www.jnncollege.edu.in/wp-content/uploads/2019/03/placementcell.png",
+      title: "The Placement Prep Journey",
+      date: "Mar 11, 2024 - Oct 05, 2025",
+      price: "₹6,000.00",
+    },
+  ],
+  // block: [],
+  // "ml-di-c": [],
+  // ai: [
+  //   {
+  //     id: "12345",
+  //     img: "https://static.wixstatic.com/media/594faf_de539b1266cd45f2861f4e4b9587b7b6~mv2.png/v1/fit/w_800,h_600,al_c,q_90/file.webp",
+  //     title: "Generative AI Essentials & Applications",
+  //     date: "Jul 20, 2024 - Jul 31, 2024",
+  //     price: "₹7,000.00",
+  //   },
+  // ],
 };
 
 const Courses = () => {
@@ -337,7 +370,7 @@ const Courses = () => {
                       key={program.id}
                       onClick={() => handleProgramClick(program)}
                     >
-                      Learn more about Generative AI{" "}
+                      Learn More {" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
