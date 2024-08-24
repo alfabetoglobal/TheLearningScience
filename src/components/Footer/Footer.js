@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { v4 as uuidv4 } from "uuid"; // Importing uuid for session ID generation
 import "./Footer.css";
 
 function Footer() {
   const [counter, setCounter] = useState(0);
-  const isFirstRender = React.useRef(true);
   const [feedback, setFeedback] = useState({
     name: "",
     email: "",
@@ -13,23 +13,9 @@ function Footer() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    const sessionId = sessionStorage.getItem("sessionId") || uuidv4();
+    sessionStorage.setItem("sessionId", sessionId);
 
-    const currentCount = localStorage.getItem("pageCount");
-    if (currentCount) {
-      const updatedCount = parseInt(currentCount, 10) + 1;
-      setCounter(updatedCount);
-      localStorage.setItem("pageCount", updatedCount);
-    } else {
-      setCounter(1);
-      localStorage.setItem("pageCount", 1);
-    }
-  }, []);
-
-  useEffect(() => {
     const sendVisitData = async () => {
       const timestamp = new Date().toISOString();
       const referrerUrl = document.referrer || "Direct";
@@ -38,6 +24,7 @@ function Footer() {
         : "desktop";
 
       const visitData = {
+        sessionId,
         timestamp,
         referrerUrl,
         deviceType,
@@ -50,8 +37,11 @@ function Footer() {
         );
 
         if (response.status === 200) {
-          setCounter((prevCounter) => prevCounter + 1);
+          const updatedCount = response.data.count;
+          setCounter(updatedCount);
           console.log("Data recorded successfully:", response.data);
+        } else {
+          console.error("Unexpected response status:", response.status);
         }
       } catch (error) {
         console.error("Error recording visit:", error);
