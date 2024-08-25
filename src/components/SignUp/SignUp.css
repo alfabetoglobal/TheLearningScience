@@ -1,0 +1,195 @@
+.signup-page {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(90deg, #3a4c9b, #744bbf);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.signup-container {
+  background: linear-gradient(145deg, #3a4c9b, #744bbf);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  width: 350px;
+  color: #fff;
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 94%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  background: #f0f0f0;
+}
+
+.signup-form .form-group button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.remember-me label {
+  font-size: 14px;
+}
+/* 
+.signup-login-link{
+ color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.sign-login {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 479px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 8px;
+  }
+
+  .signup-form .form-group button[type="submit"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .signup-container {
+    padding: 25px;
+    max-width: 400px;
+  }
+
+  .signup-container h2 {
+    font-size: 22px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 9px;
+  }
+
+  .signup-form .form-group button[type="submit"] {
+    font-size: 15px;
+    padding: 9px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .signup-container {
+    padding: 30px;
+    max-width: 450px;
+  }
+
+  .signup-container h2 {
+    font-size: 24px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 10px;
+  }
+
+  .signup-form .form-group button[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .signup-container {
+    padding: 35px;
+    max-width: 500px;
+  }
+
+  .signup-container h2 {
+    font-size: 26px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 12px;
+  }
+
+  .signup-form .form-group button[type="submit"] {
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .signup-container {
+    padding: 40px;
+    max-width: 550px;
+  }
+
+  .signup-container h2 {
+    font-size: 28px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    padding: 14px;
+  }
+
+  .signup-form .form-group button[type="submit"] {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
