@@ -1,0 +1,86 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #3a4c9b;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a .text {
+  margin-left: 10px;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .sidebar.expanded {
+    width: 200px;
+  }
+
+  .sidebar.collapsed {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .dashboard-content {
+    margin-top: 60px; /* Add space for a fixed top nav if needed */
+  }
+}

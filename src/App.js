@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "./components/Login/login";
 import Home from "./components/Home/Home";
 import Courses from "./components/Courses/Courses";
@@ -7,10 +7,15 @@ import Courses from "./components/Courses/Courses";
 // import Contact from "./components/Contact/Contact";
 import ForgotPassword from "./components/ForgetPassword/ForgotPassword";
 import SignUp from "./components/SignUp/SignUp";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Profile from "./components/Profile/Profile";
 
 const App = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
   const handleLogin = (credentials) => {
     console.log("Login details:", credentials);
+    navigate("/dashboard");
   };
 
   const handleResetPassword = (email) => {
@@ -25,8 +30,10 @@ const App = () => {
           element={<ForgotPassword onResetPassword={handleResetPassword} />}
         />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/dashboard/home" element={<Home />} />
         <Route path="/Courses" element={<Courses />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile/>}/>
         {/* <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} /> */}
       </Routes>

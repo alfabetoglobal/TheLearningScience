@@ -27,12 +27,14 @@ function Footer() {
         const deviceType = /Mobi|Android/i.test(navigator.userAgent)
           ? "mobile"
           : "desktop";
+        const pageRoute = window.location.pathname; // Get the current page route
 
         const visitData = {
           sessionId: newSessionId,
           timestamp,
           referrerUrl,
           deviceType,
+          pageRoute, // Include the pageRoute in the visit data
         };
 
         console.log("Sending visit data:", visitData);

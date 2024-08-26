@@ -29,7 +29,7 @@ const Login = () => {
       // Perform any other login logic here (e.g., API call)
 
       // Navigate to the home page after successful login
-      navigate("/home");
+      navigate("/dashboard");
     }
   };
 
